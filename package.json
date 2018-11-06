@@ -1,10 +1,10 @@
 {
-  "name": "ignite-ir-boilerplate-andross",
-  "description": "Infinite Red's hot boilerplate for React Native.",
+  "name": "ignite-ir-boilerplate-accella",
+  "description": "Accella modified - Infinite Red's hot boilerplate for React Native.",
   "license": "MIT",
-  "repository": "infinitered/ignite-ir-boilerplate-andross",
-  "homepage": "https://github.com/infinitered/ignite-ir-boilerplate-andross",
-  "version": "2.3.3",
+  "repository": "jacob-haskins/ignite-ir-boilerplate-accella",
+  "homepage": "https://github.com/jacob-haskins/ignite-ir-boilerplate-accella",
+  "version": "0.0.1",
   "files": [
     "boilerplate",
     "commands",
