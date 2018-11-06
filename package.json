@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "jacob-haskins/ignite-ir-boilerplate-accella",
   "homepage": "https://github.com/jacob-haskins/ignite-ir-boilerplate-accella",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "files": [
     "boilerplate",
     "commands",
