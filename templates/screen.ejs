@@ -1,35 +1,7 @@
-import React, { Component } from 'react'
-import { ScrollView, Text, StyleSheet } from 'react-native'
-import { connect } from 'react-redux'
-
-// Styles
-import { ApplicationStyles, Fonts, Images, Colors } from "../Themes/"
-
-class
-<%= props.name %> extends Component {
-render () {
-return (
-<ScrollView style={styles.container}>
-  <Text>
-    <%= props.name %></Text>
-</ScrollView>
-)
-}
-}
-
-const mapStateToProps = (state) => {
-return {
-}
-}
-
-const mapDispatchToProps = (dispatch) => {
-return {
-}
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(
-<%= props.name %>)
-
-const styles = StyleSheet.create({
-...ApplicationStyles.screen
-})
+import React, { Component } from 'react' import { ScrollView, Text, StyleSheet } from 'react-native' import { connect }
+from 'react-redux' // Styles import { Styles, Fonts, Images, Colors } from "../Themes/" class <%= props.name %> extends
+Component { render () { return (
+<ScrollView style="{styles.container}"> <Text> <%= props.name %></Text> </ScrollView>
+) } } const mapStateToProps = (state) => { return { } } const mapDispatchToProps = (dispatch) => { return { } } export
+default connect(mapStateToProps, mapDispatchToProps)( <%= props.name %>) const styles = StyleSheet.create({
+...Styles.screen })

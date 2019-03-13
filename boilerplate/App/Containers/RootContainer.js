@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import StartupActions from "../Redux/StartupRedux";
 
 // Styles
-import { ApplicationStyles, Fonts, Images, Colors } from "../Themes/";
+import { Styles, Fonts, Images, Colors } from "../Themes/";
 
 class RootContainer extends Component {
   componentDidMount() {
@@ -33,5 +33,5 @@ export default connect(
 )(RootContainer);
 
 const styles = StyleSheet.create({
-  ...ApplicationStyles.screen
+  ...Styles.screen
 });
