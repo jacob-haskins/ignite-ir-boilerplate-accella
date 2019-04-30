@@ -1,10 +1,10 @@
 {
-	"name": "ignite-ir-boilerplate-accella",
-	"description": "Accella modified - Infinite Red's hot boilerplate for React Native.",
+	"name": "accella-boilerplate",
+	"description": "Accella modified - Infinite Red boilerplate for React Native.",
 	"license": "MIT",
-	"repository": "jacob-haskins/ignite-ir-boilerplate-accella",
-	"homepage": "https://github.com/jacob-haskins/ignite-ir-boilerplate-accella",
-	"version": "1.1.3",
+	"repository": "jacob-haskins/accella-boilerplate",
+	"homepage": "https://github.com/jacob-haskins/accella-boilerplate",
+	"version": "1.0.0",
 	"files": [
 		"boilerplate",
 		"commands",
@@ -44,13 +44,13 @@
 	"devDependencies": {
 		"babel-eslint": "^7.1.1",
 		"fs-jetpack": "^1.0.0",
-		"jest": "^20.0.4",
+		"jest": "23.6.0",
 		"np": "^2.15.0",
 		"sinon": "^2.3.1",
 		"standard": "^10.0.2",
 		"tempy": "^0.1.0"
 	},
 	"dependencies": {
-		"ramda": "^0.23.0"
+		"ramda": "^0.25.0"
 	}
 }

@@ -1,12 +1,11 @@
 import React, { Component } from "react"
 import { ScrollView, Text, Image, View, StyleSheet, TextInput, Button } from "react-native"
-import { connect } from "react-redux"
 import ActionButton from "../../Components/ActionButton"
 
 // Styles
 import { Styles, Fonts, Images, Colors, Metrics } from "../../Themes"
 
-class LoginScreen extends Component {
+export default class LoginScreen extends Component {
 	constructor(props) {
 		super(props)
 		this.state = { username: "", password: "", authFailure: false, buttonState: "disabled" }
@@ -53,21 +52,8 @@ class LoginScreen extends Component {
 	}
 }
 
-const mapStateToProps = state => {
-	return {}
-}
-
-const mapDispatchToProps = dispatch => {
-	return {}
-}
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(LoginScreen)
-
 const styles = StyleSheet.create({
-	...Styles.screen,
+	...Styles,
 	loginButton: {
 		backgroundColor: Colors.silver,
 		height: 40,

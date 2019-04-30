@@ -1,21 +1,38 @@
-import { createStackNavigator, createSwitchNavigator } from "react-navigation"
+import { createStackNavigator, createSwitchNavigator, createSwitchNavigator } from "react-navigation"
 import LaunchScreen from "../Containers/LaunchScreen"
 import LoginScreen from "../Containers/LoginScreen"
 
-import styles from "./Styles/NavigationStyles"
+import { Styles, Fonts, Images, Colors } from "../Themes"
+
+const standardHeader = {
+	defaultNavigationOptions: {
+		headerTintColor: Colors.white,
+		headerTitleStyle: { color: Colors.white, ...Styles.mediumFont, fontSize: 20 },
+		headerStyle: {
+			backgroundColor: Colors.primaryBlue
+		},
+		headerBackTitle: null
+	}
+}
 
 const AuthenticationNavigator = createStackNavigator(
 	{
 		LoginScreen: { screen: LoginScreen }
 	},
+	standardHeader
+)
+
+const HomeNavigator = createStackNavigator(
 	{
-		headerMode: "none"
-	}
+		HomeScreen: { screen: LoginScreen }
+	},
+	standardHeader
 )
 
 const AppNavigator = createSwitchNavigator({
+	Launch: { screen: LaunchScreen },
 	Auth: AuthenticationNavigator,
-	Home: LaunchScreen
+	Home: HomeNavigator
 })
 
-export default AppNavigator
+export default createAppContainer(AppNavigator)
